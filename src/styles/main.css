@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto:wght@100&display=swap');
+#pListaPokemon{
+    width: 194px;
+    height: 31px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #DEE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nomePokemon{
+    color:white;
+}
+.cardPokemon{
+    width: 280px;
+    height: 60px;
+    background: #343A40;
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+.imagemPokemon{
+  width: 60px;
+  height: 60px;
+}
+.listaPokemons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 40px;
+
+}

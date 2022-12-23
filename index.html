@@ -4,9 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/globalStyle.css">
+    <link rel="stylesheet" href="./src/styles/mediaQueryPokemon.css">
 
     <title>Consumindo PokeAPI</title>
   </head>
 
-  <body></body>
+  <body>
+   <header>
+    <img class="logoPokemon" src="./src/assets/pokeapi.png" >
+    <nav>
+      <div id="pesquisaPokemon">
+        <input class="corpoInput" type="text" placeholder="Pesquisar por..."> 
+        <button id="botaoPesquisa"><img src="./src/assets/search-icon.png"></button>
+      </div>
+     
+    </nav>
+   </header>
+
+  <main>
+
+    <p id="pListaPokemon">Lista de Pokémon</p>
+
+    <ul class="listaPokemons">
+      <li class="cardPokemon">
+        <img class='imagemPokemon'src="">
+        <p class="nomePokemon"></p>
+      </li>
+
+    </ul>
+  </main>
+
+
+    <script src="./src/scripts/index.js"></script>
+    <script src="./src/scripts/requests.js"></script>
+  </body>
 </html>
