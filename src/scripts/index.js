@@ -5,7 +5,7 @@ function render(array) {
     mainList.innerHTML = ''
   
     array.forEach( async ({name}) => {
-      const pokerData = await getPokemonById(name)
+      const pokerData = await getPokemonByName(name)
 
       console.log(pokerData)
       const card = criandoCardPokemon(pokerData)
@@ -19,12 +19,14 @@ function render(array) {
     // console.log(pokemon.name)
     // console.log(pokemon.sprites)
     const container = document.createElement('li')
+    const divImagemP= document.createElement('div')
     const image = document.createElement('img')
     const p = document.createElement('p')
     
     container.classList.add('cardPokemon')
     image.classList.add('imagemPokemon')
     p.classList.add('nomePokemon')
+    divImagemP.classList.add('divImagemP')
 
  
   

@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: var( --color-backgroundMain-1);
     padding: 33px;
     display: flex;
     align-items: center;
@@ -43,21 +43,27 @@ main{
 }
 .corpoInput{
     width: 196px;
- 
-    background: #343A40;
+    background: var( --color-backgroundOpcoesPokemon);
     border-radius: 8px;
     margin-right: 12px;
     border: none;
-    padding: 15px 24px;
-    
+    height: 52px;
+    text-align: center;
+    color: var(--color-textoListaPokemon);
    
 }
 #botaoPesquisa{
     cursor: pointer;
-    width: 72px;
-    height: 45px;
-    background: #4C6EF5;
+    width: 82px;
+    height: 52px;
+    background: var(--color-corBackgroundBotaoPesquisa);
     border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 24px;
+    gap: 10px;
 
 }
 
@@ -68,4 +74,5 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    color: var(--color-textoListaPokemon);
 }
