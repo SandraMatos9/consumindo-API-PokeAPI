@@ -34,13 +34,16 @@ async function getPokemonByName(idPokemon) {
 
         mainList.innerHTML = ''
 
-        let mensagem = document.createElement('p')
+        let mensagem = document.createElement('h1')
 
-        mensagem.innerHTML = 'Pokemon não encontrado'
+        mensagem.innerHTML = 'Pokémon não encontrado!'
         mensagem.style.color = 'white'
 
+        let imagem = document.createElement('img')
+        imagem. src = pokeNaoEncontrado.png
 
-        mainList.append(mensagem)
+
+        mainList.append(imagem,mensagem)
       }
     })
     .then(res => {
