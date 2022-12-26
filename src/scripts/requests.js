@@ -57,7 +57,7 @@ async function getPokemonByName(idPokemon) {
 
       let mensagem = document.createElement('p')
       let imagem = document.createElement('img')
-      imagem.src = "./src/assets/pokeNaoEncontrado.gif"
+      imagem.src = "./src/assets/pokeNaoEncontrado.gif "
       mensagem.innerHTML = 'Pokemon não encontrado'
       mensagem.style.color = 'white'
 
